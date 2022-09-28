@@ -1,12 +1,11 @@
-from bke import EvaluationAgent, start, can_win
+import random
+from bke import EvaluationAgent, start
 
 
-class MijnSpeler(EvaluationAgent):
+class MyRandomAgent(EvaluationAgent):
   def evaluate(self, board, my_symbol, opponent_symbol):
-    getal = 1
-    if can_win(board, opponent_symbol):
-      getal = getal - 1000
-    return getal
+    return random.randint(1, 500)
 
-mijn_speler = MijnSpeler()
-start(player_o=mijn_speler)
+
+my_random_agent = MyRandomAgent()
+start(player_o=my_random_agent, player_x=my_random_agent)
