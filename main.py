@@ -41,7 +41,7 @@ def plot():
   random.seed(1)
  
   my_agent = MyAgent(alpha=0.8, epsilon=0.2)
-    #Hier zijn hyperparameters gebruikt. Hyperparameters zijn aanpasbare parameters waarmee je het modeltrainingsproces kunt beheren. Met neurale netwerken bepaal je bijvoorbeeld het aantal verborgen lagen en het aantal knooppunten in elke laag. Hier bij de grafiek verander je het gedrag van de functie door de parameters van de functie te veranderen. Hierdoor configureer je de machine learning-agent.
+    #Hier zijn hyperparameters gebruikt. Hyperparameters zijn aanpasbare parameters waarmee je het modeltrainingsproces kunt beheren. Met neurale netwerken bepaal je bijvoorbeeld het aantal verborgen lagen en het aantal knooppunten in elke laag. Hier bij de grafiek verander je het gedrag van de functie door de parameters van de functie te veranderen. Hierdoor configureer je de machine learning-agent. Alpha is de leerfactor van de agent. Deze bepaalt hoe snel de agent nieuwe kennis adopteert. Hoe hoger dit getal, hoe sneller de agent geneigd zal zijn om oude kennis te vervangen door nieuwe kennis. Epsilon is de verkenningsfactor van de agent. Deze bepaalt hoe vaak de agent nieuwe dingen probeert. Hoe hoger dit getal, hoe vaker de agent een willekeurige actie probeert in plaats van de best bekende zet.
   random_agent = RandomAgent()
  
   train_and_plot(
